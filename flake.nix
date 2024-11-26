@@ -1,5 +1,5 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    stable.url = "nixpkgs/nixos-24.05";
   };
 }
