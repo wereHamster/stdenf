@@ -5,7 +5,7 @@
     nix-develop.url = "github:nicknovitski/nix-develop";
   };
 
-  outputs = { self, nixpkgs, flake-utils, nix-develop }:
+  outputs = { nixpkgs, flake-utils, ... }:
     flake-utils.lib.eachDefaultSystem
       (system:
         let
