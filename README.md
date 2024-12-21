@@ -1,3 +1,8 @@
+# 2024-12-21
+
+ - `nodejs`: v20.18.1
+ - `pnpm`: 9.15.0
+
 ```sh
 nix flake update \
   --override-input nixpkgs \

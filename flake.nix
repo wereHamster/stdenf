@@ -5,5 +5,22 @@
     nix-develop.url = "github:nicknovitski/nix-develop";
   };
 
-  outputs = _: {};
+  outputs = { self, nixpkgs, flake-utils, nix-develop }:
+    flake-utils.lib.eachDefaultSystem
+      (system:
+        let
+          pkgs = import nixpkgs {
+            inherit system;
+          };
+
+        in {
+          devShells.default = pkgs.mkShell {
+            buildInputs = [
+              pkgs.nodejs
+              pkgs.pnpm
+
+            ];
+          };
+        }
+      );
 }
