@@ -9,5 +9,5 @@ nix flake update \
   --override-input nixpkgs \
     github:nixos/nixpkgs/$(nix flake metadata --json github:wereHamster/stdenf | jq -r '.locks.nodes.nixpkgs.locked.rev') \
   --override-input flake-utils \
-    github:numtide/flake-utils/$(nix flake metadata --json github:wereHamster/stdenf | jq -r '.locks.nodes.flake-utils.locked.rev')
+    github:numtide/flake-utils/$(nix flake metadata --json github:wereHamster/stdenf | jq -r '.locks.nodes."flake-utils".locked.rev')
 ```
