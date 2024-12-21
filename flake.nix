@@ -1,6 +1,8 @@
 {
   inputs = {
-    stable.url = "nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    flake-utils.url = "github:numtide/flake-utils";
+    nix-develop.url = "github:nicknovitski/nix-develop";
   };
 
   outputs = _: {};
