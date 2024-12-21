@@ -1,3 +1,16 @@
+The purpose of this repository is to provide a `flake.lock` file which pins
+widely-used inputs to specific versions. Downstream projects use this lock
+file to update their local pins in lock-step with this repository.
+
+This avoids having multiple slightly different versions of nixpkgs and other
+inputs in the Nix store when people work on multiple downstream projects
+in parallel.
+
+The lock file in this repository is updated at regular intervals (currently
+every ~2 months). Versions of applications and tools which are most relevant
+in downstream projects are published in this readme, so you have an idea what
+you are getting.
+
 # 2024-12-21
 
  - `nodejs`: 20.18.1
