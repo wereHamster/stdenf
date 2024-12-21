@@ -10,10 +10,13 @@ is shared between multiple people (eg. multiple GitHub Action runners on the
 same host).
 
 The lock file in this repository is updated at regular intervals (currently
-every ~2 months). Versions of applications and tools which are most relevant
-in downstream projects are published in this readme.
+every ~2 months). In exceptional cases (eg. when a bump is necessary to pull
+an important bug fix) an update may be done outside of this regular schedule.
 
 Last updated on: 2024-12-21
+
+Versions of applications and tools which are most relevant in downstream
+projects are published below.
 
  - `nodejs`: 20.18.1
  - `pnpm`: 9.15.0
