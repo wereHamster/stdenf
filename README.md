@@ -10,10 +10,12 @@ The lock file in this repository is updated at regular intervals (currently
 every ~2 months). Versions of applications and tools which are most relevant
 in downstream projects are published in this readme.
 
-# 2024-12-21
+Last updated at: 2024-12-21
 
  - `nodejs`: 20.18.1
  - `pnpm`: 9.15.0
+
+---
 
 ```sh
 nix flake --refresh metadata github:wereHamster/stdenf
