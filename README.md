@@ -6,7 +6,7 @@ This avoids having multiple slightly different versions of nixpkgs and other
 inputs in the Nix store when people work on multiple downstream projects
 in parallel. This saves both time (needed to download the inputs) and storage
 space (in the Nix store). Furthermore, it saves resources when the Nix store
-is shared between multiple people (eg. multiple GitHub Action runners on the
+is shared between multiple users (eg. multiple GitHub Action runners on the
 same host).
 
 The lock file in this repository is updated at regular intervals (currently
