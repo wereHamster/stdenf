@@ -8,8 +8,7 @@ in parallel.
 
 The lock file in this repository is updated at regular intervals (currently
 every ~2 months). Versions of applications and tools which are most relevant
-in downstream projects are published in this readme, so you have an idea what
-you are getting.
+in downstream projects are published in this readme.
 
 # 2024-12-21
 
