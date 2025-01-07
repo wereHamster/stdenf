@@ -18,8 +18,10 @@ an important bug fix) an update may be done outside of this regular schedule.
 Versions of applications and tools which are most relevant in downstream
 projects are published below.
 
- - `nodejs`: 20.18.1
- - `pnpm`: 9.15.0
+| Package | Version |
+| ---- | ---- |
+| [Node.js](https://nodejs.org/) | 20.18.1 |
+| [PNPm](https://pnpm.io/) | 9.15.0 |
 
 ---
 
