@@ -13,15 +13,15 @@ The lock file in this repository is updated at regular intervals (currently
 every ~2 months). In exceptional cases (eg. when a bump is necessary to pull
 an important bug fix) an update may be done outside of this regular schedule.
 
-> Last updated on: 2025-01-07
+> Last updated on: 2025-03-08
 
 Versions of applications and tools which are most relevant in downstream
 projects are published below.
 
 | Package | Version |
 | ---- | ---- |
-| [Node.js](https://nodejs.org/) | 22.11.0 |
-| [PNPm](https://pnpm.io/) | 9.15.2 |
+| [Node.js](https://nodejs.org/) | 22.14.0 |
+| [PNPm](https://pnpm.io/) | 10.5.2 |
 
 ---
 
