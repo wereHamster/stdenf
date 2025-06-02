@@ -21,6 +21,7 @@
             buildInputs = [
               pkgs.nodejs
               pkgs.pnpm
+              pkgs.biome
             ];
           };
         }

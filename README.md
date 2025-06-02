@@ -21,7 +21,7 @@ projects are published below.
 | Package | Version |
 | ---- | ---- |
 | [Node.js](https://nodejs.org/) | 22.14.0 |
-| [PNPm](https://pnpm.io/) | 10.5.2 |
+| [PNPm](https://pnpm.io/) | 10.11.0 |
 | [Biome](https://biomejs.dev/) | 1.9.4 |
 ---
 
