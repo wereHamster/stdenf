@@ -18,11 +18,11 @@ an important bug fix) an update may be done outside of this regular schedule.
 Versions of applications and tools which are most relevant in downstream
 projects are published below.
 
-| Package | Version |
-| ---- | ---- |
-| [Node.js](https://nodejs.org/) | 22.17.0 |
-| [PNPm](https://pnpm.io/) | 10.12.4 |
-| [Biome](https://biomejs.dev/) | 2.1.1 |
+| Package | Version | Attribute |
+| ---- | ---- | ---- |
+| [Node.js](https://nodejs.org/) | 22.17.0 | `nodejs` |
+| [PNPm](https://pnpm.io/) | 10.12.4 | `pnpm` |
+| [Biome](https://biomejs.dev/) | 2.1.1 | `biome` |
 ---
 
 ```sh
