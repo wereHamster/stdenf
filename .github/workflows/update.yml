@@ -23,9 +23,17 @@ jobs:
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
 
       - run: nix flake update --commit-lock-file
+      - id: nix-flake-changelog
+        run: |
+          delimiter="$(openssl rand -hex 16)"
+          echo "message<<${delimiter}" >> "${GITHUB_OUTPUT}"
+          git log -1 --pretty=%B | tail +3 | nix run github:iff/flakers >> "${GITHUB_OUTPUT}"
+          echo "${delimiter}" >> "${GITHUB_OUTPUT}"
+
       - run: nix develop -c -- scripts/refresh-readme.sh
 
       - uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7.0.8
         with:
           branch: update
           title: Update
+          body: "${{ steps.commit.nix-flake-changelog.message }}"
