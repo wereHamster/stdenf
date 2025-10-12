@@ -14,6 +14,6 @@ biome_version=$(nix develop -c -- sh -c 'biome --version' | sed 's/Version: //')
 sed -i '' "s/^> Last updated on: .*/> Last updated on: $current_date/" README.md
 
 # Update the versions table
-sed -i '' "s/| \[Node.js\](.*) | .* |/| [Node.js](https:\/\/nodejs.org\/) | $node_version |/" README.md
-sed -i '' "s/| \[PNPm\](.*) | .* |/| [PNPm](https:\/\/pnpm.io\/) | $pnpm_version |/" README.md
-sed -i '' "s/| \[Biome\](.*) | .* |/| [Biome](https:\/\/biomejs.dev\/) | $biome_version |/" README.md
+sed -i '' "s/| \[Node.js\](.*) | .* |/| [Node.js](https:\/\/nodejs.org\/) | $node_version | \`nodejs\` |/" README.md
+sed -i '' "s/| \[PNPm\](.*) | .* |/| [PNPm](https:\/\/pnpm.io\/) | $pnpm_version | \`pnpm\` |/" README.md
+sed -i '' "s/| \[Biome\](.*) | .* |/| [Biome](https:\/\/biomejs.dev\/) | $biome_version | \`biome\` |/" README.md
