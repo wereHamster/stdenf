@@ -1,0 +1,22 @@
+name: Update
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "22 11 * * *"
+
+jobs:
+  update:
+    name: Update
+    runs-on: ubuntu
+
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - uses: DeterminateSystems/nix-installer-action@786fff0690178f1234e4e1fe9b536e94f5433196 # v20
+
+      - run: nix flake update --commit-lock-file
+
+      - uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7.0.8
+        with:
+          branch: update
+          title: Update
