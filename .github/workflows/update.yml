@@ -36,4 +36,4 @@ jobs:
         with:
           branch: update
           title: Update
-          body: "${{ steps.commit.nix-flake-changelog.message }}"
+          body: "${{ steps.nix-flake-changelog.outputs.message }}"
