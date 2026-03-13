@@ -13,7 +13,7 @@ The lock file in this repository is updated at regular intervals (currently
 every ~2 months). In exceptional cases (eg. when a bump is necessary to pull
 an important bug fix) an update may be done outside of this regular schedule.
 
-> Last updated on: 2026-01-24
+> Last updated on: 2026-03-13
 
 Versions of applications and tools which are most relevant in downstream
 projects are published below.
@@ -21,9 +21,9 @@ projects are published below.
 | Package | Version | Attribute |
 | ---- | ---- | ---- |
 | [Node.js](https://nodejs.org/) | 24.13.0 | `nodejs` |
-| [PNPm](https://pnpm.io/) | 10.28.0 | `pnpm` |
-| [Biome](https://biomejs.dev/) | 2.3.11 | `biome` |
-| [Deno](https://deno.com/) | 2.6.5 | `deno` |
+| [PNPm](https://pnpm.io/) | 10.30.3 | `pnpm` |
+| [Biome](https://biomejs.dev/) | 2.4.6 | `biome` |
+| [Deno](https://deno.com/) | 2.6.10 | `deno` |
 ---
 
 ```sh
