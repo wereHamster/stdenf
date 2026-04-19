@@ -10,6 +10,7 @@ node_version=$(nix develop -c -- sh -c 'node --version' | sed 's/v//')
 pnpm_version=$(nix develop -c -- sh -c 'pnpm --version')
 biome_version=$(nix develop -c -- sh -c 'biome --version' | sed 's/Version: //')
 deno_version=$(nix develop -c -- sh -c 'deno --version' | grep deno | sed 's/deno \(.*\) (.*)/\1/')
+rust_version=$(nix develop -c -- sh -c 'cargo --version' | sed 's/cargo \(.*\) (.*)/\1/')
 
 # Update the README.md
 sed -i "s/^> Last updated on: .*/> Last updated on: $current_date/" README.md
@@ -19,3 +20,4 @@ sed -i "s/| \[Node.js\](.*) | .* |/| [Node.js](https:\/\/nodejs.org\/) | $node_v
 sed -i "s/| \[PNPm\](.*) | .* |/| [PNPm](https:\/\/pnpm.io\/) | $pnpm_version | \`pnpm\` |/" README.md
 sed -i "s/| \[Biome\](.*) | .* |/| [Biome](https:\/\/biomejs.dev\/) | $biome_version | \`biome\` |/" README.md
 sed -i "s/| \[Deno\](.*) | .* |/| [Deno](https:\/\/deno.com\/) | $deno_version | \`deno\` |/" README.md
+sed -i "s/| \[Rust\](.*) | .* |/| [Rust](https:\/\/rust-lang.org\/) | $rust_version | \`cargo\` |/" README.md
