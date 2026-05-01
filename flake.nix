@@ -22,7 +22,6 @@
               pkgs.nodejs
               pkgs.pnpm
               pkgs.biome
-              pkgs.deno
               pkgs.cargo
             ];
           };
