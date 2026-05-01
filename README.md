@@ -23,7 +23,6 @@ projects are published below.
 | [Node.js](https://nodejs.org/) | 24.13.0 | `nodejs` |
 | [PNPm](https://pnpm.io/) | 10.30.3 | `pnpm` |
 | [Biome](https://biomejs.dev/) | 2.4.6 | `biome` |
-| [Deno](https://deno.com/) | 2.6.10 | `deno` |
 | [Rust](https://rust-lang.org/) | 1.93.0 | `cargo` |
 ---
 
