@@ -5,12 +5,16 @@ on:
   schedule:
     - cron: "22 11 * * *"
 
+permissions:
+  contents: read
+
 jobs:
   update:
     name: Update
     runs-on: ubuntu-latest
 
     permissions:
+      id-token: write
       contents: write
       pull-requests: write
 
