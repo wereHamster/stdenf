@@ -28,11 +28,7 @@ jobs:
 
       - run: nix flake update --commit-lock-file
       - id: nix-flake-changelog
-        run: |
-          delimiter="$(openssl rand -hex 16)"
-          echo "message<<${delimiter}" >> "${GITHUB_OUTPUT}"
-          git log -1 --pretty=%B | tail +3 | nix run github:iff/flakers >> "${GITHUB_OUTPUT}"
-          echo "${delimiter}" >> "${GITHUB_OUTPUT}"
+        run: git log -1 --pretty=%B | tail +3 | nix run github:iff/flakers -- --github-output-armor message >> "${GITHUB_OUTPUT}"
 
       - run: nix develop -c -- scripts/refresh-readme.sh
 
