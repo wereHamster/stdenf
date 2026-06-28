@@ -12,6 +12,7 @@
     let
       forAllSystems =
         function: nixpkgs.lib.genAttrs (import systems) (system: function nixpkgs.legacyPackages.${system});
+
     in
     {
       devShells = forAllSystems (pkgs: {
